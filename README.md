@@ -18,6 +18,13 @@ Repository tracking daily tasks, source code, and documentation for the **DriveR
 │   ├── Day-02.ipynb
 │   ├── task.py
 │   └── README.md
+├── Day-3/
+│   ├── .env.example
+│   ├── brightpage_tests.csv
+│   ├── tests.csv
+│   ├── task.ipynb
+│   ├── task.py
+│   └── README.md
 └── README.md
 ```
 
@@ -29,7 +36,7 @@ Repository tracking daily tasks, source code, and documentation for the **DriveR
 | :--- | :--- | :--- | :--- |
 | **Day 1** | Sweet Crumbs Bakery & Prompt Guard | System Prompt Engineering, Groq API, LangChain ChatGroq, Llama Prompt Guard | [`Day-1/`](./Day-1/) |
 | **Day 2** | BrightPage Stationery AI Agent | Few-Shot Intent Classification, Structured JSON Extraction, Multi-Turn Memory Buffer, Error Resilience | [`Day-2/`](./Day-2/) |
-| **Day 3** | *Upcoming* | Tool Calling & Autonomous Agent Loop | `Day-3/` |
+| **Day 3** | Composable LCEL Chains & Evaluation | LCEL (`prompt \| llm \| parser`), `MessagesPlaceholder`, Automated CSV Evaluation, `create_agent` Sneak Peek | [`Day-3/`](./Day-3/) |
 
 ---
 
@@ -43,8 +50,8 @@ Repository tracking daily tasks, source code, and documentation for the **DriveR
 
 2. **Install required dependencies:**
    ```bash
-   pip install openai langchain_groq groq python-dotenv ipywidgets
+   pip install openai langchain langchain-core langchain-google-genai langchain-groq groq python-dotenv ipywidgets
    ```
 
-3. **Configure API Key:**
-   - In each day's directory, copy `.env.example` to `.env` and insert your `GROQ_API_KEY`.
+3. **Configure API Keys:**
+   - In each day's directory, copy `.env.example` to `.env` and insert your API keys (`GROQ_API_KEY` and/or `GOOGLE_API_KEY`).
