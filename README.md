@@ -40,6 +40,14 @@ Repository tracking daily tasks, source code, and documentation for the **DriveR
 │   ├── task.ipynb
 │   ├── task.py
 │   └── README.md
+├── Day-6/
+│   ├── .env.example
+│   ├── brightpage_orders.csv
+│   ├── brightpage_router_graph.png
+│   ├── brightpage_extended_graph.png
+│   ├── task.ipynb
+│   ├── task.py
+│   └── README.md
 └── README.md
 ```
 
@@ -54,6 +62,7 @@ Repository tracking daily tasks, source code, and documentation for the **DriveR
 | **Day 3** | Composable LCEL Chains & Evaluation | LCEL (`prompt \| llm \| parser`), `MessagesPlaceholder`, Automated CSV Evaluation, `create_agent` Sneak Peek | [`Day-3/`](./Day-3/) |
 | **Day 4** | Tool-Calling Agents & Persistent Sheets | `@tool` Decorators, Pydantic Schemas, Agent Message Traces, Local CSV Order Logging | [`Day-4/`](./Day-4/) |
 | **Day 5** | Thread Memory & RAG | `InMemorySaver` + `thread_id`, ChromaDB Vector Store, Semantic FAQ Retrieval, PDF RAG Lab | [`Day-5/`](./Day-5/) |
+| **Day 6** | Workflows, Planning & LangGraph | `StateGraph`, Focused Specialist Agents (`faq_agent`, `order_agent`), Intent Routing, `review_order` Node | [`Day-6/`](./Day-6/) |
 
 ---
 
@@ -69,7 +78,7 @@ Repository tracking daily tasks, source code, and documentation for the **DriveR
    ```bash
    pip install openai langchain langchain-core langchain-google-genai langchain-groq groq \
                langgraph chromadb sentence-transformers pypdf \
-               pydantic python-dotenv ipywidgets gspread
+               pydantic python-dotenv ipywidgets gspread ipython
    ```
 
 3. **Configure API Keys:**
